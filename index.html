@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="overflow-y-hidden bg-dark">
+    <!-- !!!!!!!!!!!! start loading !!!!!!!!!!!!!! -->
+    <div
+      class="loading fixed inset-0 bg-dark center h-full text-white z-[9999]"
+    >
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!-- !!!!!!!!!!!! end loading !!!!!!!!!!!!!! -->
+    <!-- !!!!!!!!!!!! start aside !!!!!!!!!!!!!! -->
+    <div class="aside fixed h-full top-0 flex z-10">
+      <div
+        class="left-nav bg-dark text-white p-6 flex flex-col justify-between"
+      >
+        <div class="links pe-28 py-2 overflow-hidden">
+          <ul>
+            <li class="py-2 cursor-pointer relative search">Search</li>
+            <li class="py-2 cursor-pointer relative categories">Categories</li>
+            <li class="py-2 cursor-pointer relative area">Area</li>
+            <li class="py-2 cursor-pointer relative ingredients">
+              Ingredients
+            </li>
+            <li class="py-2 cursor-pointer relative contact">Contact Us</li>
+          </ul>
+        </div>
+        <footer>
+          <div class="icons">
+            <i class="fa-brands fa-facebook mx-1 cursor-pointer"></i>
+            <i class="fa-brands fa-twitter mx-1 cursor-pointer"></i>
+            <i class="fa-solid fa-globe mx-1 cursor-pointer"></i>
+          </div>
+          <div class="copyright py-2">
+            Copyright Â© 2019 All Rights <br />
+            Reserved.
+          </div>
+        </footer>
+      </div>
+      <div
+        class="right-menu bg-white flex flex-col justify-between items-center p-3"
+      >
+        <img src="image/logo.png" class="w-12" alt="" />
+        <i class="fa-solid fa-bars fa-2x menu cursor-pointer"></i>
+        <div>
+          <i class="fa-solid fa-globe block cursor-pointer"></i>
+          <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <!-- !!!!!!!!!!!! end aside !!!!!!!!!!!!!! -->
+    <main>
+      <div class="container mx-auto px-28 py-10">
+        <div class="row-search container mx-auto"></div>
+        <div
+          class="row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+        ></div>
+        <div
+          class="row-details container mx-auto text-white grid grid-cols-1 md:grid-cols-[30%_minmax(0,1fr)]"
+        ></div>
+        <div class="row-contact text-center"></div>
+      </div>
+    </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/style.js"></script>
+  </body>
+</html>
